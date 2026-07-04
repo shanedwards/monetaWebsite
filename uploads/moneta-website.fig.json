@@ -1,0 +1,201 @@
+{
+  "document": {
+    "id": "0:0",
+    "name": "moneta Website",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:1",
+        "name": "\ud83c\udfa8 Design Tokens",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": [
+          {
+            "id": "2:1",
+            "name": "Color System",
+            "type": "FRAME",
+            "backgroundColor": {
+              "r": 0.1,
+              "g": 0.1,
+              "b": 0.1,
+              "a": 1
+            },
+            "x": 0,
+            "y": 0,
+            "width": 800,
+            "height": 600,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "3:1",
+        "name": "\ud83d\udce6 Components",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": []
+      },
+      {
+        "id": "4:1",
+        "name": "\ud83c\udfe0 Home",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": [
+          {
+            "id": "5:1",
+            "name": "Desktop 1440",
+            "type": "FRAME",
+            "backgroundColor": {
+              "r": 0.067,
+              "g": 0.067,
+              "b": 0.067,
+              "a": 1
+            },
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 6000,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6:1",
+        "name": "\ud83d\udd27 Platform",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": [
+          {
+            "id": "7:1",
+            "name": "Desktop 1440",
+            "type": "FRAME",
+            "backgroundColor": {
+              "r": 0.067,
+              "g": 0.067,
+              "b": 0.067,
+              "a": 1
+            },
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 4500,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "8:1",
+        "name": "\ud83d\udcca FinOps Services",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": [
+          {
+            "id": "9:1",
+            "name": "Desktop 1440",
+            "type": "FRAME",
+            "backgroundColor": {
+              "r": 0.067,
+              "g": 0.067,
+              "b": 0.067,
+              "a": 1
+            },
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 4200,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "10:1",
+        "name": "\u2753 Why moneta",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": [
+          {
+            "id": "11:1",
+            "name": "Desktop 1440",
+            "type": "FRAME",
+            "backgroundColor": {
+              "r": 0.067,
+              "g": 0.067,
+              "b": 0.067,
+              "a": 1
+            },
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 3800,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "12:1",
+        "name": "\ud83d\udcdd Demo Form Modal",
+        "type": "CANVAS",
+        "backgroundColor": {
+          "r": 0.067,
+          "g": 0.067,
+          "b": 0.067,
+          "a": 1
+        },
+        "children": [
+          {
+            "id": "13:1",
+            "name": "Modal Overlay",
+            "type": "FRAME",
+            "backgroundColor": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.7
+            },
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "schemaVersion": 0,
+  "styles": {},
+  "name": "moneta Website",
+  "lastModified": "2026-05-08T20:38:52.399959",
+  "version": "1.0",
+  "role": "owner"
+}
