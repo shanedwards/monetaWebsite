@@ -218,7 +218,7 @@ function DemoModal({ isOpen, onClose }) {
     setErrors(next);
     if (Object.keys(next).length > 0) return;
     setSending(true);
-    window.emailjs.send("service_99yjrrz", "template_8h4r2vj", {
+    window.emailjs.send("service_22vqe4l", "template_cwidomn", {
       name:     data.name,
       email:    data.email,
       company:  data.company,
