@@ -150,15 +150,15 @@ function Header({ onDemoClick }) {
 function Footer({ onDemoClick }) {
   return (
     <footer className="bg-bg-secondary border-t border-line-soft">
-      <div className="container-x py-8">
+      <div className="container-x py-2">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
+          <div className="mt-3">
             <a href="#/" aria-label="moneta home" className="flex items-center gap-0"><MonetaMark size={36} /><span className="text-[23px] font-semibold tracking-tight text-white" style={{ marginLeft: -3, transform: "translateY(0.3px)" }}>moneta</span></a>
             <p className="mt-2.5 text-[13.5px] leading-[1.55] text-ink-secondary max-w-sm">
               The financial operating system for AWS and Azure resellers
             </p>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 md:mt-3">
             <button onClick={onDemoClick} className="text-[14px] text-ink-secondary hover:text-white transition-colors">Contact</button>
             <span className="text-[14px] text-ink-secondary select-none">info@monetacloud.com</span>
             <a href="https://www.linkedin.com/company/monetacloud/" target="_blank" rel="noopener noreferrer"
@@ -170,7 +170,7 @@ function Footer({ onDemoClick }) {
             </a>
           </div>
         </div>
-        <div className="mt-6 pt-5 border-t border-line-soft flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+        <div className="mt-5 pt-3 border-t border-line-soft flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
           <p className="text-[13px] text-ink-secondary">© 2026 moneta. All rights reserved.</p>
           <a href="#/privacy-policy" className="text-[13px] text-ink-secondary hover:text-white">Privacy Policy</a>
         </div>
