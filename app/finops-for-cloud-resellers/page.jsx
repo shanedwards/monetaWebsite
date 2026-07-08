@@ -70,7 +70,7 @@ export default function FinOpsForCloudResellersPage() {
         <div className="dot-corner" />
         <div className="container-x relative text-center">
           <Eyebrow className="mb-7 flex flex-col items-center">FinOps for Cloud Resellers</Eyebrow>
-          <h1 className="max-w-[900px] mx-auto" style={{ fontSize: "clamp(36px, 4.2vw, 58px)", fontWeight: 700, lineHeight: 1.08, letterSpacing: "-0.025em" }}>
+          <h1 className="max-w-[900px] mx-auto" style={{ fontSize: "clamp(36px, 4.2vw, 58px)", fontWeight: 500, lineHeight: 1.08, letterSpacing: "-0.025em" }}>
             Deliver FinOps Consistently
             <br />
             Across <span className="grad-text-bp">Every Customer</span>
@@ -126,7 +126,7 @@ export default function FinOpsForCloudResellersPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5">
             <Eyebrow className="mb-5">Why moneta</Eyebrow>
-            <h2 className="text-balance" style={{ fontSize: "clamp(28px, 3vw, 42px)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+            <h2 className="text-balance" style={{ fontSize: "clamp(28px, 3vw, 42px)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
               Built for <span className="grad-text-bp">AWS and Azure</span> resellers managing multiple customers, pricing models, and discount programs.
             </h2>
             <p className="mt-5 text-[15.5px] leading-[1.7] text-ink-secondary">

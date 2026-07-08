@@ -134,7 +134,7 @@ export default function FinOpsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-6">
               <Eyebrow className="mb-6">Cloud FinOps</Eyebrow>
-              <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 700, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
+              <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 500, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
                 Cloud FinOps for resellers and{" "}
                 <span className="grad-text-bp">managed service providers.</span>
               </h1>
@@ -158,7 +158,7 @@ export default function FinOpsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-14">
           <div>
             <Eyebrow className="mb-5">The Challenge</Eyebrow>
-            <h2 style={{ fontSize: "clamp(30px, 3.5vw, 46px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#f1f5f9" }}>
+            <h2 style={{ fontSize: "clamp(30px, 3.5vw, 46px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#f1f5f9" }}>
               Customers expect more than cloud billing.
             </h2>
           </div>
@@ -175,7 +175,7 @@ export default function FinOpsPage() {
           {CHALLENGE_TOP.map((c) => (
             <div key={c.t} className="hover-lift" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.09)", borderRadius: 14, padding: "18px 20px 18px", display: "flex", flexDirection: "column" }}>
               <div style={{ width: 36, height: 36, borderRadius: 9, background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 10 }}>{c.icon}</div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 6, lineHeight: 1.35 }}>{c.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 6, lineHeight: 1.35 }}>{c.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.6, fontFamily: "Inter, sans-serif", marginBottom: 0 }}>{c.b}</p>
             </div>
           ))}
@@ -184,7 +184,7 @@ export default function FinOpsPage() {
           {CHALLENGE_BOTTOM.map((c) => (
             <div key={c.t} className="hover-lift" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.09)", borderRadius: 14, padding: "18px 20px 18px", display: "flex", flexDirection: "column" }}>
               <div style={{ width: 36, height: 36, borderRadius: 9, background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 10 }}>{c.icon}</div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 6, lineHeight: 1.35 }}>{c.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 6, lineHeight: 1.35 }}>{c.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.6, fontFamily: "Inter, sans-serif", marginBottom: 0 }}>{c.b}</p>
             </div>
           ))}
@@ -195,7 +195,7 @@ export default function FinOpsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-14">
           <div>
             <Eyebrow className="mb-5">The Solution</Eyebrow>
-            <h2 style={{ fontSize: "clamp(30px, 3.5vw, 46px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#0f172a" }}>
+            <h2 style={{ fontSize: "clamp(30px, 3.5vw, 46px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#0f172a" }}>
               Turn cloud financial data into repeatable Cloud FinOps services.
             </h2>
           </div>
@@ -212,7 +212,7 @@ export default function FinOpsPage() {
           {SOLUTION_TOP.map((c) => (
             <div key={c.t} className="hover-lift" style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 14, padding: "24px 22px" }}>
               <div style={{ width: 38, height: 38, borderRadius: 9, background: "rgba(59,130,246,0.08)", border: "1px solid rgba(59,130,246,0.18)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 14 }}>{c.icon}</div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{c.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{c.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.65, fontFamily: "Inter, sans-serif" }}>{c.b}</p>
             </div>
           ))}
@@ -221,7 +221,7 @@ export default function FinOpsPage() {
           {SOLUTION_BOTTOM.map((c) => (
             <div key={c.t} className="hover-lift" style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 14, padding: "24px 22px" }}>
               <div style={{ width: 38, height: 38, borderRadius: 9, background: "rgba(59,130,246,0.08)", border: "1px solid rgba(59,130,246,0.18)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 14 }}>{c.icon}</div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{c.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{c.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.65, fontFamily: "Inter, sans-serif" }}>{c.b}</p>
             </div>
           ))}
@@ -231,7 +231,7 @@ export default function FinOpsPage() {
       <SectionShell id="finops-how-it-works" className="border-t border-line-soft" style={{ background: "#0F2040", paddingTop: 56, paddingBottom: 56 }}>
         <div className="text-center max-w-[760px] mx-auto mb-5">
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#22D3EE", fontFamily: "Inter, sans-serif", marginBottom: 10 }}>How It Works</p>
-          <h2 style={{ fontSize: "clamp(32px, 4vw, 54px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.03em", color: "#f1f5f9" }}>
+          <h2 style={{ fontSize: "clamp(32px, 4vw, 54px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.03em", color: "#f1f5f9" }}>
             From unwieldy cloud cost data to customer-facing Cloud FinOps value.
           </h2>
           <p className="mt-3 text-[16px] leading-[1.7]" style={{ color: "#94a3b8" }}>
@@ -241,7 +241,7 @@ export default function FinOpsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
           {HOW_TOP.map((s) => (
             <div key={s.t} className="hover-lift" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 14, padding: "22px 22px 24px" }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.65, fontFamily: "Inter, sans-serif" }}>{s.b}</p>
             </div>
           ))}
@@ -249,7 +249,7 @@ export default function FinOpsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {HOW_BOTTOM.map((s) => (
             <div key={s.t} className="hover-lift" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 14, padding: "22px 22px 24px" }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#e2e8f0", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.65, fontFamily: "Inter, sans-serif" }}>{s.b}</p>
             </div>
           ))}

@@ -188,7 +188,7 @@ export default function WhyPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
             <div className="lg:col-span-6">
               <Eyebrow className="mb-6">Why moneta</Eyebrow>
-              <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 700, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
+              <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 500, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
                 Built for the way cloud resellers actually{" "}
                 <span className="grad-text-bp">operate, bill, and grow.</span>
               </h1>
@@ -212,7 +212,7 @@ export default function WhyPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-12">
           <div>
             <Eyebrow className="mb-5">The Reseller Problem</Eyebrow>
-            <h2 style={{ fontSize: "clamp(30px, 3.5vw, 46px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#f1f5f9" }}>
+            <h2 style={{ fontSize: "clamp(30px, 3.5vw, 46px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#f1f5f9" }}>
               Most stacks were built for direct customers, not resellers.
             </h2>
           </div>
@@ -255,7 +255,7 @@ export default function WhyPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-10">
           <div>
             <Eyebrow className="mb-5">What moneta is</Eyebrow>
-            <h2 style={{ fontSize: "clamp(28px, 3.2vw, 44px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#0f172a" }}>
+            <h2 style={{ fontSize: "clamp(28px, 3.2vw, 44px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#0f172a" }}>
               An operating system for cloud reseller billing.
             </h2>
           </div>
@@ -270,7 +270,7 @@ export default function WhyPage() {
             <div style={{ width: 42, height: 42, borderRadius: 10, background: "rgba(59,130,246,0.15)", border: "1px solid rgba(59,130,246,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
             </div>
-            <h3 style={{ fontSize: 20, fontWeight: 700, color: "#f1f5f9", fontFamily: "Inter, sans-serif", marginBottom: 12, lineHeight: 1.3 }}>Built reseller-first, from the data model up.</h3>
+            <h3 style={{ fontSize: 20, fontWeight: 500, color: "#f1f5f9", fontFamily: "Inter, sans-serif", marginBottom: 12, lineHeight: 1.3 }}>Built reseller-first, from the data model up.</h3>
             <p style={{ fontSize: 13.5, color: "#94a3b8", lineHeight: 1.65, fontFamily: "Inter, sans-serif", marginBottom: 20 }}>
               Other tools bolt reseller logic onto a direct-customer product. moneta starts with the reseller&apos;s data: pricing rules, contracts, commitments, discounts, customer segregation, and margin.
             </p>
@@ -292,7 +292,7 @@ export default function WhyPage() {
             {WHAT_IT_IS_CARDS.map((c) => (
               <div key={c.t} className="hover-lift" style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 14, padding: "20px 20px" }}>
                 <div style={{ width: 36, height: 36, borderRadius: 9, background: "rgba(59,130,246,0.08)", border: "1px solid rgba(59,130,246,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 12 }}>{c.icon}</div>
-                <h3 style={{ fontSize: 14.5, fontWeight: 700, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 6, lineHeight: 1.3 }}>{c.t}</h3>
+                <h3 style={{ fontSize: 14.5, fontWeight: 500, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 6, lineHeight: 1.3 }}>{c.t}</h3>
                 <p style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6, fontFamily: "Inter, sans-serif" }}>{c.b}</p>
               </div>
             ))}
@@ -303,7 +303,7 @@ export default function WhyPage() {
       <SectionShell id="why-how-it-fits" className="border-t border-line-soft light-section" style={{ background: "#DDE4EF" }}>
         <div className="text-center max-w-[680px] mx-auto mb-10">
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#22D3EE", fontFamily: "Inter, sans-serif", marginBottom: 12 }}>How It Works</p>
-          <h2 style={{ fontSize: "clamp(30px, 3.8vw, 52px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#0f172a" }}>
+          <h2 style={{ fontSize: "clamp(30px, 3.8vw, 52px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#0f172a" }}>
             Six Steps to Driving Revenue and Margin with moneta.
           </h2>
           <p className="mt-4 text-[16px] leading-[1.7]" style={{ color: "#64748b" }}>
@@ -316,7 +316,7 @@ export default function WhyPage() {
               <div style={{ display: "flex", alignItems: "center", marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid #f1f5f9" }}>
                 <span style={{ fontSize: 12, color: "#94a3b8", fontFamily: "Inter, sans-serif" }}>Step {s.step}</span>
               </div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.65, fontFamily: "Inter, sans-serif" }}>{s.b}</p>
             </div>
           ))}
@@ -327,7 +327,7 @@ export default function WhyPage() {
               <div style={{ display: "flex", alignItems: "center", marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid #f1f5f9" }}>
                 <span style={{ fontSize: 12, color: "#94a3b8", fontFamily: "Inter, sans-serif" }}>Step {s.step}</span>
               </div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
+              <h3 style={{ fontSize: 15, fontWeight: 500, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, lineHeight: 1.35 }}>{s.t}</h3>
               <p style={{ fontSize: 13.5, color: "#64748b", lineHeight: 1.65, fontFamily: "Inter, sans-serif" }}>{s.b}</p>
             </div>
           ))}
@@ -340,7 +340,7 @@ export default function WhyPage() {
             <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#3B82F6", display: "inline-block" }} />
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#3B82F6", fontFamily: "Inter, sans-serif" }}>Ready to grow your cloud revenue and margin?</span>
           </div>
-          <h2 style={{ fontSize: "clamp(32px, 4vw, 54px)", fontWeight: 700, lineHeight: 1.08, letterSpacing: "-0.025em", color: "#f1f5f9" }}>
+          <h2 style={{ fontSize: "clamp(32px, 4vw, 54px)", fontWeight: 500, lineHeight: 1.08, letterSpacing: "-0.025em", color: "#f1f5f9" }}>
             See why resellers replace stitched workflows with moneta.
           </h2>
           <p className="mt-6 text-[17px] leading-[1.7]" style={{ color: "#94a3b8" }}>

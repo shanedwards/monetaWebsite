@@ -110,8 +110,8 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch relative" style={{ zIndex: 1 }}>
           <div className="lg:col-span-6 flex flex-col lg:justify-center">
             <Eyebrow className="mb-5">The Problem</Eyebrow>
-            <h2 className="text-h1">
-              <span className="whitespace-nowrap">Margin Loss Is Built Into</span>
+            <h2 className="text-h1" style={{ fontSize: "clamp(34px, 3.8vw, 54px)" }}>
+              Margin Loss Is Built Into
               <br />
               <span className="grad-text-bp">Cloud Reseller Billing</span>
             </h2>
@@ -186,7 +186,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-10">
           <div className="lg:col-span-4">
             <Eyebrow className="mb-5">The Solution</Eyebrow>
-            <h2 className="text-balance" style={{ fontSize: "clamp(26px, 2.6vw, 38px)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.02em" }}>
+            <h2 className="text-balance" style={{ fontSize: "clamp(26px, 2.6vw, 38px)", fontWeight: 500, lineHeight: 1.15, letterSpacing: "-0.02em" }}>
               Align billing, pricing, discounts, and margins in <span className="grad-text-bp">one system.</span>
             </h2>
           </div>
@@ -246,8 +246,12 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5">
             <Eyebrow className="mb-7">Cloud FinOps Managed Services</Eyebrow>
-            <h2 className="text-h1 text-balance">
-              Deliver Cloud FinOps as a <span className="grad-text-bp">Managed Service</span>
+            <h2 className="text-h1" style={{ fontSize: "clamp(36px, 3.8vw, 52px)" }}>
+              Deliver Cloud
+              <br />
+              FinOps as a
+              <br />
+              <span className="grad-text-bp">Managed Service</span>
             </h2>
             <p className="mt-6 text-[16.5px] leading-[1.7] text-ink-secondary max-w-[440px]">
               Cloud service providers are expected to help customers manage and optimize cloud spend.

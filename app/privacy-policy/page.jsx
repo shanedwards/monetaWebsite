@@ -19,7 +19,7 @@ export const metadata = {
 
 function H({ children }) {
   return (
-    <h2 className="text-[22px] md:text-[24px] font-semibold text-white mt-10 mb-3 first:mt-0" style={{ letterSpacing: "-0.01em" }}>
+    <h2 className="text-[22px] md:text-[24px] font-normal text-white mt-10 mb-3 first:mt-0" style={{ letterSpacing: "-0.01em" }}>
       {children}
     </h2>
   );
@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
         <div className="glow-hero" />
         <div className="dot-corner" />
         <div className="container-x relative">
-          <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 700, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
+          <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 500, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
             Privacy Policy
           </h1>
         </div>
