@@ -63,9 +63,9 @@ export default function OperatingSystemDiagram() {
           boxShadow: "0 0 0 1px rgba(91,123,255,0.3), 0 24px 60px -20px rgba(91,123,255,0.4)",
           zIndex: 0
         }}>
-          <div className="flex items-center justify-center gap-2 mb-4 pb-4 border-b border-line-soft">
+          <div className="flex items-center justify-center mb-4 pb-4 border-b border-line-soft" style={{ gap: 2 }}>
             <Image src="/assets/moneta-icon.png" alt="" width={30} height={30} style={{ objectFit: "contain", transform: "translateY(-2px)" }} />
-            <span style={{ fontSize: 16, lineHeight: 1 }}>
+            <span style={{ fontSize: 16, lineHeight: 1, marginLeft: -2 }}>
               <b className="text-white">moneta</b>{" "}
               <span className="grad-text-bp font-semibold">operating system</span>
             </span>

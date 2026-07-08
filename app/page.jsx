@@ -110,7 +110,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch relative" style={{ zIndex: 1 }}>
           <div className="lg:col-span-6 flex flex-col lg:justify-center">
             <Eyebrow className="mb-5">The Problem</Eyebrow>
-            <h2 className="text-h1" style={{ fontSize: "clamp(34px, 3.8vw, 54px)" }}>
+            <h2 className="text-h1" style={{ fontSize: "clamp(36px, 3.9vw, 55px)", letterSpacing: "-0.02em" }}>
               Margin Loss Is Built Into
               <br />
               <span className="grad-text-bp">Cloud Reseller Billing</span>

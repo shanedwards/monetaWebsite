@@ -134,9 +134,12 @@ export default function FinOpsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-6">
               <Eyebrow className="mb-6">Cloud FinOps</Eyebrow>
-              <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 500, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
-                Cloud FinOps for resellers and{" "}
-                <span className="grad-text-bp">managed service providers.</span>
+              <h1 style={{ fontSize: "clamp(34px, 4vw, 54px)", fontWeight: 500, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
+                Cloud FinOps for
+                <br />
+                resellers and <span className="grad-text-bp">managed</span>
+                <br />
+                <span className="grad-text-bp">service providers.</span>
               </h1>
               <p className="mt-7 text-[17px] md:text-[18px] leading-[1.65] text-ink-secondary max-w-[520px]">
                 moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure environments.
@@ -229,10 +232,12 @@ export default function FinOpsPage() {
       </SectionShell>
 
       <SectionShell id="finops-how-it-works" className="border-t border-line-soft" style={{ background: "#0F2040", paddingTop: 56, paddingBottom: 56 }}>
-        <div className="text-center max-w-[760px] mx-auto mb-5">
+        <div className="text-center max-w-[920px] mx-auto mb-5">
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#22D3EE", fontFamily: "Inter, sans-serif", marginBottom: 10 }}>How It Works</p>
-          <h2 style={{ fontSize: "clamp(32px, 4vw, 54px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.03em", color: "#f1f5f9" }}>
-            From unwieldy cloud cost data to customer-facing Cloud FinOps value.
+          <h2 style={{ fontSize: "clamp(30px, 3.6vw, 48px)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.03em", color: "#f1f5f9" }}>
+            From unwieldy cloud cost data
+            <br />
+            to customer-facing Cloud FinOps value.
           </h2>
           <p className="mt-3 text-[16px] leading-[1.7]" style={{ color: "#94a3b8" }}>
             moneta allows reseller and MSP teams turn billing and usage data into meaningful Cloud FinOps workflows for customers.
@@ -259,7 +264,15 @@ export default function FinOpsPage() {
       <FinalCTA
         className="!py-10 md:!py-14"
         eyebrow="Ready to Deliver Cloud FinOps at Scale?"
-        title="Turn Cloud data into a repeatable customer valued managed service."
+        title={
+          <>
+            Turn Cloud data
+            <br />
+            into a repeatable customer
+            <br />
+            valued managed service.
+          </>
+        }
         description="moneta enables cloud resellers and MSPs to deliver a high value customer managed services across every customer."
         ctaLabel="Book a Demo"
       />

@@ -21,7 +21,7 @@ export default function FinalCTA({ eyebrow, title, description, ctaLabel = "Book
             {eyebrow}
           </p>
         )}
-        <h2 className="text-h1 text-balance max-w-[760px]">{title}</h2>
+        <h2 className="text-h1 text-balance max-w-[920px]">{title}</h2>
         {description && <p className="mt-6 text-[19px] leading-[1.6] text-ink-secondary max-w-[560px]">{description}</p>}
         <div className="mt-9">
           <DemoCtaButton variant="primary" className="!px-7 !py-4 !text-[15px]">
