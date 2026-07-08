@@ -378,7 +378,7 @@ function FaqSection({ onDemoClick }) {
     { q: "How long does implementation typically take?", a: "Implementation depends on your cloud environment, billing processes, and operational requirements. During your demo, we'll review your current environment and outline an implementation approach tailored to your business." },
     { q: "How do I schedule a demo?", a: "Simply click Book a Demo anywhere on the website. We'll learn about your cloud reseller business, answer your questions, and schedule a personalized demonstration of moneta." },
   ];
-  const [openIdx, setOpenIdx] = React.useState(0);
+  const [openIdx, setOpenIdx] = React.useState(-1);
 
   return (
     <section className="relative py-14 md:py-16 overflow-hidden"
