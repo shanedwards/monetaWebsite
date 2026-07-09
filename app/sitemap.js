@@ -1,13 +1,21 @@
-import { SITE_URL } from "@/lib/seo";
+const BASE_URL = "https://monetacloud.com";
+
+// Single source of truth for the site's 5 real, routed pages.
+const ROUTES = [
+  { path: "/", changeFrequency: "weekly", priority: 1.0 },
+  { path: "/finops-services", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/finops-for-cloud-resellers", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/why-moneta", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
+];
 
 export default function sitemap() {
   const lastModified = new Date();
 
-  return [
-    { url: `${SITE_URL}/`, lastModified, changeFrequency: "weekly", priority: 1 },
-    { url: `${SITE_URL}/finops-services`, lastModified, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/finops-for-cloud-resellers`, lastModified, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/why-moneta`, lastModified, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/privacy-policy`, lastModified, changeFrequency: "yearly", priority: 0.3 },
-  ];
+  return ROUTES.map(({ path, changeFrequency, priority }) => ({
+    url: `${BASE_URL}${path}`,
+    lastModified,
+    changeFrequency,
+    priority,
+  }));
 }

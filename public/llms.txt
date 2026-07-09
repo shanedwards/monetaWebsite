@@ -1,0 +1,36 @@
+# moneta
+
+> The financial operating system for AWS and Azure cloud resellers — aligning billing, pricing, discounts, and margins in one platform.
+
+moneta helps cloud resellers and managed service providers (MSPs) eliminate margin loss caused by disconnected billing, pricing, and discount systems. It provides a single financial operating layer that continuously reconciles cloud cost, customer pricing rules, discounts, and margin — instead of one-off spreadsheet analysis or generic single-tenant FinOps tools. moneta supports both AWS and Microsoft Azure, and is designed to manage the complexity of multi-customer cloud billing, pricing models, and cloud discount programs across both providers.
+
+## Pages
+
+- [Home](https://monetacloud.com/): Overview of moneta's value proposition — eliminating margin loss in cloud reseller billing through a unified operating system for billing, pricing, discounts, and margin intelligence.
+- [Cloud FinOps Services](https://monetacloud.com/finops-services): How moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure.
+- [FinOps for Cloud Resellers](https://monetacloud.com/finops-for-cloud-resellers): A structured, repeatable Cloud FinOps service delivered consistently across every customer, without added operational burden on the reseller.
+- [Why moneta](https://monetacloud.com/why-moneta): Positions moneta between the reseller's cloud costs and customer revenue — aligning pricing, discounts, and margin so every account stays profitable as the business grows.
+- [Privacy Policy](https://monetacloud.com/privacy-policy): How moneta collects, uses, and protects personal information collected via the website.
+
+## FAQ
+
+- **What is moneta?** moneta is the financial operating system for AWS and Azure cloud resellers. It continuously aligns billing, pricing, cloud discounts, customer agreements, invoicing, and margins from a single financial foundation, helping resellers automate operations, improve margins, and deliver Cloud FinOps to customers.
+- **Who is moneta built for?** AWS and Azure cloud resellers, managed service providers (MSPs), and organizations managing cloud billing and pricing across multiple customer accounts.
+- **How is moneta different from traditional billing or Cloud FinOps tools?** Most Cloud FinOps platforms help organizations optimize their own cloud spend. moneta is built specifically for cloud resellers, MSPs, and service providers, combining billing, pricing, cloud discounts, invoicing, margin visibility, and Cloud FinOps into a single financial operating system.
+- **Which cloud providers does moneta support?** Both AWS and Microsoft Azure, across multi-customer billing, pricing models, and cloud discount programs.
+- **Can moneta help us deliver Cloud FinOps services?** Yes. moneta provides the financial foundation to deliver Cloud FinOps as a scalable managed service, combining billing, pricing, cloud cost, and margin data to give customers ongoing visibility, optimization recommendations, and financial insights.
+- **Will moneta work with our existing billing processes?** Yes. moneta fits into existing reseller operations while replacing manual reconciliation and disconnected processes with a single, synchronized financial system.
+- **How long does implementation typically take?** Implementation depends on your cloud environment, billing processes, and operational requirements, and is scoped during a demo.
+- **How do I schedule a demo?** Click Book a Demo anywhere on the website.
+
+## Company
+
+- Name: moneta
+- Website: https://monetacloud.com
+- LinkedIn: https://www.linkedin.com/company/monetacloud/
+- Built for: AWS and Azure cloud resellers, managed service providers (MSPs), and organizations managing cloud billing/pricing across multiple customer accounts.
+
+## Resources
+
+- Sitemap: https://monetacloud.com/sitemap.xml
+- Full site (all pages allowed for AI crawlers): https://monetacloud.com/robots.txt
