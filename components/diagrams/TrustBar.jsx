@@ -7,8 +7,7 @@ export default function TrustBar() {
     <div className="card !rounded-2xl px-5 py-4 md:px-14 md:py-0 overflow-hidden md:h-[88px]">
       <div className="grid grid-cols-2 gap-x-4 gap-y-5 md:flex md:flex-nowrap md:items-center md:justify-between md:gap-6 md:h-full">
         <div className="flex items-center gap-2 md:gap-3 md:[transform:scale(1.2)] md:[transform-origin:left_center]">
-          <PngIcon src="/graphics/icons/HeroCloudProcessedAnnuallyIcon.png" size={30} className="md:hidden" />
-          <PngIcon src="/graphics/icons/HeroCloudProcessedAnnuallyIcon.png" size={42} className="hidden md:block" />
+          <PngIcon src="/graphics/icons/HeroCloudProcessedAnnuallyIcon.png" size={42} className="!w-[30px] !h-[30px] md:!w-[42px] md:!h-[42px]" />
           <div className="leading-tight">
             <p className="text-[10.5px] md:text-[12px] text-ink-muted">Multi-customer</p>
             <p className="text-[14px] md:text-[16px] font-semibold grad-text-bp -mt-0.5">Billing</p>
@@ -27,8 +26,7 @@ export default function TrustBar() {
           </div>
         </div>
         <div className="flex items-center gap-2 md:gap-3 md:[transform:scale(1.2)] md:[transform-origin:right_center]">
-          <PngIcon src="/graphics/icons/HeroPurposeBuiltIcon.png" size={30} className="md:hidden" />
-          <PngIcon src="/graphics/icons/HeroPurposeBuiltIcon.png" size={42} className="hidden md:block" />
+          <PngIcon src="/graphics/icons/HeroPurposeBuiltIcon.png" size={42} className="!w-[30px] !h-[30px] md:!w-[42px] md:!h-[42px]" />
           <div className="leading-tight">
             <p className="text-[10.5px] md:text-[12px] text-ink-muted">Purpose-built for</p>
             <p className="text-[14px] md:text-[16px] font-semibold grad-text-bp -mt-0.5">Cloud Resellers</p>
