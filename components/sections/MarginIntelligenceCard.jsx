@@ -59,13 +59,20 @@ function CustomerRow({ c, i, hovered, mounted, setHovered, visitMult }) {
     <div
       onMouseEnter={(e) => { e.stopPropagation(); setHovered(i); }}
       onMouseLeave={(e) => { e.stopPropagation(); setHovered(null); }}
-      style={{ display: "grid", gridTemplateColumns: "1fr 88px 110px 52px", alignItems: "center", gap: 10, padding: "9px 10px", borderRadius: 8, cursor: "default", transition: "background 0.15s", background: hovered === i ? "rgba(56,189,248,0.07)" : "transparent" }}>
-      <span style={{ color: "#e2e8f0", fontSize: 13, fontWeight: 400, fontFamily: "Inter, sans-serif", paddingLeft: 8 }}>{c.name}</span>
-      <span style={{ color: "#64748b", fontSize: 12, textAlign: "right", fontFamily: "Inter, monospace", fontVariantNumeric: "tabular-nums" }}>${liveAmount.toLocaleString()}</span>
-      <div style={{ background: "#1e293b", borderRadius: 999, height: 5, overflow: "hidden" }}>
-        <div style={{ width: mounted ? `${c.widthPct}%` : "0%", height: "100%", borderRadius: 999, background: c.bar, transition: `width 0.9s cubic-bezier(0.4,0,0.2,1) ${i * 0.12}s` }} />
+      className="flex flex-col gap-2 md:grid md:gap-[10px] md:items-center"
+      style={{ padding: "9px 10px", borderRadius: 8, cursor: "default", transition: "background 0.15s", background: hovered === i ? "rgba(56,189,248,0.07)" : "transparent", gridTemplateColumns: "1fr 88px 110px 52px" }}>
+      {/* Mobile line 1: name + dollar amount */}
+      <div className="flex md:contents items-center justify-between">
+        <span style={{ color: "#e2e8f0", fontSize: 13, fontWeight: 400, fontFamily: "Inter, sans-serif" }} className="md:pl-2">{c.name}</span>
+        <span style={{ color: "#64748b", fontSize: 12, fontFamily: "Inter, monospace", fontVariantNumeric: "tabular-nums" }} className="md:text-right">${liveAmount.toLocaleString()}</span>
       </div>
-      <span style={{ fontSize: 12, fontWeight: 500, textAlign: "right", color: c.pctColor, fontFamily: "Inter, monospace", fontVariantNumeric: "tabular-nums" }}>{c.pct}</span>
+      {/* Mobile line 2: progress bar + percentage */}
+      <div className="flex md:contents items-center gap-2.5">
+        <div className="flex-1 md:flex-initial" style={{ background: "#1e293b", borderRadius: 999, height: 5, overflow: "hidden" }}>
+          <div style={{ width: mounted ? `${c.widthPct}%` : "0%", height: "100%", borderRadius: 999, background: c.bar, transition: `width 0.9s cubic-bezier(0.4,0,0.2,1) ${i * 0.12}s` }} />
+        </div>
+        <span style={{ fontSize: 12, fontWeight: 500, color: c.pctColor, fontFamily: "Inter, monospace", fontVariantNumeric: "tabular-nums" }} className="md:text-right">{c.pct}</span>
+      </div>
     </div>
   );
 }
@@ -99,7 +106,7 @@ export default function MarginIntelligenceCard() {
         }
         @keyframes floatUpDownHome { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
       `}</style>
-      <div ref={ref} onMouseEnter={() => setCardHovered(true)} onMouseLeave={() => { setCardHovered(false); setHovered(null); }} style={{ position: "relative", width: "100%", maxWidth: 520, margin: "0 auto", paddingBottom: 52 }}>
+      <div ref={ref} onMouseEnter={() => setCardHovered(true)} onMouseLeave={() => { setCardHovered(false); setHovered(null); }} className="md:pb-[52px]" style={{ position: "relative", width: "100%", maxWidth: 520, margin: "0 auto" }}>
 
         <div style={{
           borderRadius: 16, padding: 2,
@@ -128,7 +135,8 @@ export default function MarginIntelligenceCard() {
           </div>
         </div>
 
-        <div style={{
+        {/* Desktop/tablet: floating popup overlapping the card bottom, hides on hover (unchanged). */}
+        <div className="hidden md:block" style={{
           position: "absolute", bottom: 0, left: 20,
           background: "#ffffff", borderRadius: 12, padding: "13px 16px", width: 290,
           boxShadow: "0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(234,88,12,0.12)",
@@ -136,6 +144,19 @@ export default function MarginIntelligenceCard() {
           transition: "opacity 0.25s",
           pointerEvents: "none",
           animation: "floatUpDownHome 3s ease-in-out infinite",
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 5 }}>
+            <span style={{ fontSize: 14 }}>⚠️</span>
+            <span style={{ color: "#ea580c", fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "Inter, sans-serif" }}>Margin Drop Alert</span>
+          </div>
+          <p style={{ fontSize: 13, fontWeight: 500, marginBottom: 3, fontFamily: "Inter, sans-serif", color: "#0f172a" }}>Saltcliff Media <span style={{ color: "#dc2626", fontWeight: 400 }}>(3%)</span></p>
+          <p style={{ color: "#64748b", fontSize: 11.5, lineHeight: 1.55, fontFamily: "Inter, sans-serif" }}>Customer Savings Plan discount applied at acct-level but priced at list.</p>
+        </div>
+
+        {/* Mobile: same content, but in normal flow below the card instead of overlapping it. */}
+        <div className="md:hidden mt-4" style={{
+          background: "#ffffff", borderRadius: 12, padding: "13px 16px",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(234,88,12,0.12)",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 5 }}>
             <span style={{ fontSize: 14 }}>⚠️</span>

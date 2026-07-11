@@ -174,18 +174,30 @@ export default function FinOpsServiceTabs() {
 
   return (
     <div ref={ref} style={{ background: "#fff", borderRadius: 16, border: "1px solid #e2e8f0", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden", fontFamily: "Inter, sans-serif" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 6, padding: "10px", borderBottom: "1px solid #e2e8f0", background: "#f8fafc" }}>
+      <div className="grid grid-cols-3 gap-1.5 md:gap-[6px] p-2.5" style={{ borderBottom: "1px solid #e2e8f0", background: "#f8fafc" }}>
         {tabs.map((tab, i) => (
-          <button key={tab.label} onClick={() => switchTab(i)} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 7, padding: "9px 12px", background: active === i ? "#ffffff" : "transparent", border: active === i ? "1px solid #e2e8f0" : "1px solid transparent", borderRadius: 8, boxShadow: active === i ? "0 1px 4px rgba(0,0,0,0.08)" : "none", cursor: "pointer", color: active === i ? "#3b82f6" : "#64748b", fontWeight: active === i ? 600 : 500, fontSize: 13.5, fontFamily: "Inter, sans-serif", transition: "all 0.15s", whiteSpace: "nowrap" }}>
-            {tab.icon}{tab.label}
+          <button
+            key={tab.label}
+            onClick={() => switchTab(i)}
+            className="flex items-center justify-center gap-1 md:gap-[7px] px-1.5 py-2 md:px-3 md:py-[9px] whitespace-normal md:whitespace-nowrap text-center"
+            style={{ background: active === i ? "#ffffff" : "transparent", border: active === i ? "1px solid #e2e8f0" : "1px solid transparent", borderRadius: 8, boxShadow: active === i ? "0 1px 4px rgba(0,0,0,0.08)" : "none", cursor: "pointer", color: active === i ? "#3b82f6" : "#64748b", fontWeight: active === i ? 600 : 500, fontFamily: "Inter, sans-serif", transition: "all 0.15s" }}
+          >
+            <span className="text-[10.5px] md:text-[13.5px] leading-tight">{tab.icon}{tab.label}</span>
           </button>
         ))}
       </div>
 
-      <div style={{ position: "relative", height: 252 }}>
+      <div className="relative h-auto md:h-[252px]">
         {tabs.map((tab, i) => (
-          <div key={tab.label} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, alignItems: "stretch", visibility: i === active ? "visible" : "hidden", position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
-            <div style={{ padding: "14px 24px 16px", borderRight: "1px solid #f1f5f9" }}>
+          <div
+            key={tab.label}
+            className={
+              "grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full " +
+              "md:absolute md:top-0 md:left-0 md:h-full " +
+              (i === active ? "" : "hidden md:grid md:invisible")
+            }
+          >
+            <div style={{ padding: "14px 24px 16px", borderRight: "1px solid #f1f5f9" }} className="md:border-r border-b md:border-b-0 border-[#f1f5f9]">
               {tab.service && <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.12em", color: "#38bdf8", textTransform: "uppercase", marginBottom: 10 }}>{tab.service}</div>}
               <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", lineHeight: 1.25, marginBottom: 12 }}>{tab.title}</div>
               <p style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6, marginBottom: 16 }}>{tab.desc}</p>

@@ -36,9 +36,19 @@ export default function OperatingSystemDiagram() {
     </svg>
   );
 
+  // Mobile-only vertical connector shown between stacked sections (desktop uses the horizontal Connector above).
+  const VerticalConnector = ({ color }) => (
+    <div className="flex md:hidden justify-center py-1" aria-hidden="true">
+      <svg width="14" height="20" viewBox="0 0 14 20">
+        <line x1="7" y1="0" x2="7" y2="14" stroke="#22D3EE" strokeWidth="1.4" strokeDasharray="4 3" />
+        <polygon points="3.5,12 7,20 10.5,12" fill={color} />
+      </svg>
+    </div>
+  );
+
   return (
-    <div className="relative w-full overflow-x-auto">
-      <div className="grid grid-cols-[1fr_auto_1fr] gap-5 md:gap-8 items-center min-w-[560px]">
+    <div className="relative w-full md:overflow-x-auto">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-5 md:gap-8 items-center md:min-w-[560px]">
 
         <div className="space-y-3">
           <p className="eyebrow text-center md:text-left text-[11px] tracking-[0.2em] mb-2">Inputs</p>
@@ -58,8 +68,9 @@ export default function OperatingSystemDiagram() {
           ))}
         </div>
 
-        <div className="relative card !rounded-2xl p-5" style={{
-          minWidth: "min(300px, 46vw)",
+        <VerticalConnector color="#3B82F6" />
+
+        <div className="relative card !rounded-2xl p-5 w-full md:w-auto md:min-w-[min(300px,46vw)]" style={{
           boxShadow: "0 0 0 1px rgba(91,123,255,0.3), 0 24px 60px -20px rgba(91,123,255,0.4)",
           zIndex: 0
         }}>
@@ -102,6 +113,8 @@ export default function OperatingSystemDiagram() {
             </div>
           </div>
         </div>
+
+        <VerticalConnector color="#A855F7" />
 
         <div className="space-y-3">
           <p className="eyebrow text-center md:text-left text-[11px] tracking-[0.2em] mb-2">Outputs</p>

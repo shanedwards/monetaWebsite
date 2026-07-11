@@ -57,25 +57,33 @@ export default function ResultsGraphic() {
         </p>
       </div>
 
-      <div style={{ marginTop: 40, display: "grid", gridTemplateColumns: "repeat(4,1fr)", background: "rgba(13,20,42,0.6)", border: "1px solid rgba(99,102,241,0.18)", borderRadius: 16, overflow: "hidden", backdropFilter: "blur(12px)" }}>
+      <div className="grid grid-cols-2 md:[grid-template-columns:repeat(4,1fr)]" style={{ marginTop: 40, background: "rgba(13,20,42,0.6)", border: "1px solid rgba(99,102,241,0.18)", borderRadius: 16, overflow: "hidden", backdropFilter: "blur(12px)" }}>
         {TIMELINE_STATS.map((s, i) => (
-          <div key={s.label} style={{ padding: "32px 24px", textAlign: "left", borderLeft: i === 0 ? "none" : "1px solid rgba(255,255,255,0.06)" }}>
-            <div style={{ fontSize: 52, fontWeight: 800, lineHeight: 1, letterSpacing: "-2px", fontFamily: "Inter, sans-serif", color: s.color, textShadow: `0 0 28px ${s.glow}` }}>
+          <div
+            key={s.label}
+            className={
+              (i % 2 === 1 ? "" : "border-r") + " " +
+              (i >= 2 ? "border-t" : "") + " " +
+              "md:border-t-0 " + (i === 0 ? "md:border-l-0" : "md:border-l") + " md:border-r-0"
+            }
+            style={{ padding: "20px 16px", textAlign: "left", borderColor: "rgba(255,255,255,0.06)" }}
+          >
+            <div className="text-[36px] md:text-[52px]" style={{ fontWeight: 800, lineHeight: 1, letterSpacing: "-2px", fontFamily: "Inter, sans-serif", color: s.color, textShadow: `0 0 28px ${s.glow}` }}>
               <CountUp {...s} started={started} />
             </div>
-            <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#64748b", fontFamily: "Inter, sans-serif", marginTop: 12 }}>{s.label}</div>
+            <div className="text-[10px] md:text-[11px]" style={{ fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#64748b", fontFamily: "Inter, sans-serif", marginTop: 12 }}>{s.label}</div>
           </div>
         ))}
       </div>
 
-      <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 18 }}>
+      <div className="grid grid-cols-3 gap-2 md:gap-[18px]" style={{ marginTop: 20 }}>
         {BOTTOM_FEATURES.map(f => (
-          <div key={f.title} style={{ background: "rgba(13,20,42,0.6)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "22px 24px", backdropFilter: "blur(10px)" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 12 }}>
-              <div style={{ width: 38, height: 38, borderRadius: 9, background: f.iconBg, border: `1px solid ${f.iconBorder}`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{f.icon}</div>
-              <div style={{ fontSize: 14.5, fontWeight: 700, color: "#f1f5f9", fontFamily: "Inter, sans-serif", lineHeight: 1.2 }}>{f.title}</div>
+          <div key={f.title} className="p-2.5 md:p-[22px_24px]" style={{ background: "rgba(13,20,42,0.6)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, backdropFilter: "blur(10px)" }}>
+            <div className="flex items-center gap-1.5 md:gap-3 mb-2 md:mb-3">
+              <div className="w-7 h-7 md:w-[38px] md:h-[38px]" style={{ borderRadius: 9, background: f.iconBg, border: `1px solid ${f.iconBorder}`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{f.icon}</div>
+              <div className="text-[11.5px] md:text-[14.5px]" style={{ fontWeight: 700, color: "#f1f5f9", fontFamily: "Inter, sans-serif", lineHeight: 1.2 }}>{f.title}</div>
             </div>
-            <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6, fontFamily: "Inter, sans-serif" }}>{f.desc}</div>
+            <div className="text-[10.5px] md:text-[13px]" style={{ color: "#64748b", lineHeight: 1.6, fontFamily: "Inter, sans-serif" }}>{f.desc}</div>
           </div>
         ))}
       </div>

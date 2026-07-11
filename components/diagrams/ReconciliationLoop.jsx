@@ -34,7 +34,7 @@ export default function ReconciliationLoop() {
   ];
 
   return (
-    <div style={{ background: "linear-gradient(160deg,#162035 0%,#111828 100%)", border: "1px solid rgba(56,189,248,0.25)", borderRadius: 16, padding: "28px 28px 20px", boxShadow: "0 0 60px rgba(56,189,248,0.08)" }}>
+    <div className="p-3.5 md:p-[28px_28px_20px]" style={{ background: "linear-gradient(160deg,#162035 0%,#111828 100%)", border: "1px solid rgba(56,189,248,0.25)", borderRadius: 16, boxShadow: "0 0 60px rgba(56,189,248,0.08)" }}>
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
         <div>
@@ -48,7 +48,7 @@ export default function ReconciliationLoop() {
       </div>
 
       <div style={{ position: "relative", display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 0 }}>
-        <svg style={{ position: "absolute", top: 21, left: 0, width: "100%", height: 4, overflow: "visible", zIndex: 0 }} preserveAspectRatio="none" viewBox="0 0 800 4">
+        <svg className="top-[15px] md:top-[21px]" style={{ position: "absolute", left: 0, width: "100%", height: 4, overflow: "visible", zIndex: 0 }} preserveAspectRatio="none" viewBox="0 0 800 4">
           <line x1="100" y1="2" x2="700" y2="2" stroke="rgba(56,189,248,0.45)" strokeWidth="1.5" strokeDasharray="8 6" fill="none">
             <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="2.4s" repeatCount="indefinite" />
           </line>
@@ -56,8 +56,8 @@ export default function ReconciliationLoop() {
 
         {steps.map((s, i) => (
           <div key={s.label} style={{ display: "flex", flexDirection: "column", alignItems: "center", width: `${100 / 4}%`, zIndex: 2, position: "relative" }}>
-            <div style={{
-              width: 44, height: 44, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center",
+            <div className="w-8 h-8 md:w-11 md:h-11" style={{
+              borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center",
               background: "#0d1425",
               border: `2px solid ${active === i ? s.color : "rgba(255,255,255,0.1)"}`,
               color: active === i ? s.color : "rgba(180,186,200,0.4)",
@@ -66,30 +66,30 @@ export default function ReconciliationLoop() {
               marginBottom: 0,
               isolation: "isolate",
             }}>
-              {s.icon}
+              <span className="scale-75 md:scale-100">{s.icon}</span>
             </div>
           </div>
         ))}
       </div>
 
-      <div style={{ display: "flex", gap: 8, marginTop: 12 }}>
+      <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-2 mt-3 md:mt-[12px]">
         {steps.map((s, i) => (
-          <div key={s.label} style={{
-            flex: 1, borderRadius: 10, padding: "14px 14px 12px",
+          <div key={s.label} className="p-2 md:p-[14px_14px_12px]" style={{
+            flex: 1, borderRadius: 10, minWidth: 0,
             background: active === i ? `linear-gradient(160deg,${s.color}12,rgba(10,16,32,0.9))` : "rgba(255,255,255,0.02)",
             border: `1px solid ${active === i ? s.color + "55" : "rgba(255,255,255,0.07)"}`,
             transition: "all 0.3s",
           }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
-              <span style={{ color: active === i ? "#f1f5f9" : "#b0bac9", fontSize: 13, fontWeight: 600, fontFamily: "Inter, sans-serif", lineHeight: 1.2 }}>{s.label}</span>
-              <span style={{ color: "rgba(160,175,195,0.7)", fontSize: 10, fontFamily: "Inter, monospace" }}>{s.num}</span>
+            <div className="mb-1 md:mb-1.5" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+              <span className="text-[11px] md:text-[13px]" style={{ color: active === i ? "#f1f5f9" : "#b0bac9", fontWeight: 600, fontFamily: "Inter, sans-serif", lineHeight: 1.2 }}>{s.label}</span>
+              <span className="hidden md:inline" style={{ color: "rgba(160,175,195,0.7)", fontSize: 10, fontFamily: "Inter, monospace" }}>{s.num}</span>
             </div>
-            <p style={{ color: "#7a8fa8", fontSize: 11, fontFamily: "Inter, sans-serif", marginBottom: 12 }}>{s.sub}</p>
+            <p className="text-[10px] md:text-[11px] mb-1.5 md:mb-3" style={{ color: "#7a8fa8", fontFamily: "Inter, sans-serif" }}>{s.sub}</p>
             <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
               {s.stats.map(st => (
-                <div key={st.k} style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#7a8fa8", fontSize: 11, fontFamily: "Inter, monospace" }}>{st.k}</span>
-                  <span style={{ color: st.vc || "#b0bac9", fontSize: 12, fontWeight: 600, fontFamily: "Inter, monospace", fontVariantNumeric: "tabular-nums" }}>{st.v}</span>
+                <div key={st.k} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 4 }}>
+                  <span className="text-[10px] md:text-[11px]" style={{ color: "#7a8fa8", fontFamily: "Inter, monospace" }}>{st.k}</span>
+                  <span className="text-[10.5px] md:text-[12px] shrink-0" style={{ color: st.vc || "#b0bac9", fontWeight: 600, fontFamily: "Inter, monospace", fontVariantNumeric: "tabular-nums" }}>{st.v}</span>
                 </div>
               ))}
             </div>
