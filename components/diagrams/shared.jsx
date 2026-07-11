@@ -44,13 +44,14 @@ export const Icons = {
   refresh: (c) => <IconLine color={c}><path d="M3 12a9 9 0 0115.5-6.3L21 8M21 3v5h-5" /><path d="M21 12a9 9 0 01-15.5 6.3L3 16M3 21v-5h5" /></IconLine>,
 };
 
-export function PngIcon({ src, size = 22 }) {
+export function PngIcon({ src, size = 22, className }) {
   return (
     <Image
       src={src}
       alt=""
       width={size}
       height={size}
+      className={className}
       style={{ width: size, height: size, objectFit: "contain", display: "block", flexShrink: 0 }}
     />
   );
