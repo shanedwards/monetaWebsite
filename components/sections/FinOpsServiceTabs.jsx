@@ -182,7 +182,10 @@ export default function FinOpsServiceTabs() {
             className="flex items-center justify-center gap-1 md:gap-[7px] px-1.5 py-2 md:px-3 md:py-[9px] whitespace-normal md:whitespace-nowrap text-center"
             style={{ background: active === i ? "#ffffff" : "transparent", border: active === i ? "1px solid #e2e8f0" : "1px solid transparent", borderRadius: 8, boxShadow: active === i ? "0 1px 4px rgba(0,0,0,0.08)" : "none", cursor: "pointer", color: active === i ? "#3b82f6" : "#64748b", fontWeight: active === i ? 600 : 500, fontFamily: "Inter, sans-serif", transition: "all 0.15s" }}
           >
-            <span className="text-[10.5px] md:text-[13.5px] leading-tight">{tab.icon}{tab.label}</span>
+            <span className="flex items-center gap-1 md:gap-[7px] text-[10.5px] md:text-[13.5px] leading-tight">
+              <span className="shrink-0 inline-flex">{tab.icon}</span>
+              {tab.label}
+            </span>
           </button>
         ))}
       </div>
