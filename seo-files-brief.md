@@ -11,18 +11,19 @@ so an AI assistant can produce accurate files without guessing at site structure
 - **Company:** moneta — "the financial operating system for AWS and Azure cloud resellers." Aligns
   billing, pricing, discounts, and margins in one platform for cloud resellers and MSPs.
 
-## The 5 real pages (there are no others)
+## The 4 real pages (there are no others)
 
 | URL | Title | Description | Priority | Change frequency |
 |---|---|---|---|---|
 | `/` | moneta — Cloud Reseller Billing | The financial operating system for AWS and Azure cloud resellers — aligning billing, pricing, discounts, and margins in one platform. | 1.0 | weekly |
 | `/finops-services` | Cloud FinOps Services | moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure. | 0.8 | monthly |
-| `/finops-for-cloud-resellers` | FinOps for Cloud Resellers | A structured, repeatable Cloud FinOps service for AWS and Azure resellers — deliver FinOps consistently across every customer without added operational burden. | 0.8 | monthly |
 | `/why-moneta` | Why moneta | moneta sits between the reseller's cloud costs and customer revenue, aligning pricing, discounts, and margin so every account stays profitable as the business grows. | 0.8 | monthly |
 | `/privacy-policy` | Privacy Policy | How moneta collects, uses, and protects your personal information on monetacloud.com. | 0.3 | yearly |
 
-Do not invent additional routes. These 5 are the entire site. (A `/platform` page and related diagram
-components exist in the codebase but are dead code — never routed to, never linked — exclude entirely.)
+Do not invent additional routes. These 4 are the entire site. (A `/platform` page and related diagram
+components exist in the codebase but are dead code — never routed to, never linked — exclude entirely.
+`/finops-for-cloud-resellers` also exists as a buildable route in the codebase but is not linked from
+anywhere on the live site — exclude it from SEO files as well.)
 
 ## Current `sitemap.xml` (Next.js `app/sitemap.js`, generates this automatically at `/sitemap.xml`)
 
@@ -39,12 +40,6 @@ Already implemented. If regenerating by hand, match this shape:
   </url>
   <url>
     <loc>https://monetacloud.com/finops-services</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://monetacloud.com/finops-for-cloud-resellers</loc>
     <lastmod>YYYY-MM-DD</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -122,9 +117,6 @@ one-off spreadsheet analysis or generic single-tenant FinOps tools.
 - [Cloud FinOps Services](https://monetacloud.com/finops-services): How moneta helps cloud resellers
   and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing
   Cloud FinOps reporting across AWS and Azure.
-- [FinOps for Cloud Resellers](https://monetacloud.com/finops-for-cloud-resellers): A structured,
-  repeatable Cloud FinOps service delivered consistently across every customer, without added
-  operational burden on the reseller.
 - [Why moneta](https://monetacloud.com/why-moneta): Positions moneta between the reseller's cloud
   costs and customer revenue — aligning pricing, discounts, and margin so every account stays
   profitable as the business grows.
@@ -156,8 +148,7 @@ The site already ships JSON-LD structured data that should stay consistent with 
   `https://monetacloud.com/assets/moneta-logo.png`, description "The financial operating system for
   AWS and Azure cloud resellers.", sameAs LinkedIn.
 - **WebSite** (root layout, every page): name "moneta", url `https://monetacloud.com`.
-- **Service** (on `/finops-services` and `/finops-for-cloud-resellers`): describes the FinOps /
-  cloud-reseller-billing service offering per page.
+- **Service** (on `/finops-services`): describes the FinOps / cloud-reseller-billing service offering.
 - **FAQPage** (on `/`, home page): built from the FAQ content below.
 - **BreadcrumbList** (on non-home pages).
 

@@ -8,7 +8,6 @@ moneta helps cloud resellers and managed service providers (MSPs) eliminate marg
 
 - [Home](https://monetacloud.com/): Overview of moneta's value proposition — eliminating margin loss in cloud reseller billing through a unified operating system for billing, pricing, discounts, and margin intelligence.
 - [Cloud FinOps Services](https://monetacloud.com/finops-services): How moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure.
-- [FinOps for Cloud Resellers](https://monetacloud.com/finops-for-cloud-resellers): A structured, repeatable Cloud FinOps service delivered consistently across every customer, without added operational burden on the reseller.
 - [Why moneta](https://monetacloud.com/why-moneta): Positions moneta between the reseller's cloud costs and customer revenue — aligning pricing, discounts, and margin so every account stays profitable as the business grows.
 - [Privacy Policy](https://monetacloud.com/privacy-policy): How moneta collects, uses, and protects personal information collected via the website.
 
