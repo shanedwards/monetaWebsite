@@ -1,24 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import Eyebrow from "./ui/Eyebrow";
 import Button from "./ui/Button";
 import FormField from "./ui/FormField";
-
-const EMAILJS_PUBLIC_KEY = "ngQ6S-PSHLtvYSuor";
-const EMAILJS_SERVICE_ID = "service_22vqe4l";
-const EMAILJS_TEMPLATE_ID = "template_cwidomn";
 
 export default function DemoModal({ isOpen, onClose }) {
   const dialogRef = useRef(null);
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
-
-  useEffect(() => {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-  }, []);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -55,14 +46,18 @@ export default function DemoModal({ isOpen, onClose }) {
     setErrors(next);
     if (Object.keys(next).length > 0) return;
     setSending(true);
-    emailjs
-      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
         name: data.name,
         email: data.email,
         company: data.company,
-        message: data.message || "—",
-      })
-      .then(() => {
+        message: data.message || "",
+      }),
+    })
+      .then(async (res) => {
+        if (!res.ok) throw new Error();
         setSending(false);
         setSubmitted(true);
       })
