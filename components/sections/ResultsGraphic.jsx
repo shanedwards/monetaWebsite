@@ -18,9 +18,12 @@ function CountUp({ target, decimals, suffix, color, glow, started }) {
     requestAnimationFrame(tick);
   }, [started, target]);
   return (
-    <span style={{ color, textShadow: `0 0 20px ${glow}` }}>
-      {val.toFixed(decimals)}{suffix}
-    </span>
+    <>
+      <span aria-hidden="true" style={{ color, textShadow: `0 0 20px ${glow}` }}>
+        {val.toFixed(decimals)}{suffix}
+      </span>
+      <span className="sr-only">{target.toFixed(decimals)}{suffix}</span>
+    </>
   );
 }
 
