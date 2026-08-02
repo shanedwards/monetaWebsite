@@ -2,7 +2,7 @@ import { Inter, Source_Serif_4 } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { DemoModalProvider } from "@/components/DemoModalProvider";
-import { SITE_URL, SITE_NAME, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { SITE_URL, SITE_NAME, organizationJsonLd, websiteJsonLd, softwareApplicationJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const inter = Inter({
@@ -55,6 +55,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationJsonLd()) }}
         />
         <DemoModalProvider>
           <Header />
