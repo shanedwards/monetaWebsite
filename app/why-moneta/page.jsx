@@ -14,12 +14,14 @@ export const metadata = {
     description:
       "moneta sits between the reseller's cloud costs and customer revenue, aligning pricing, discounts, and margin so every account stays profitable as the business grows.",
     url: `${SITE_URL}/why-moneta`,
+    images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Why moneta — moneta",
     description:
       "moneta sits between the reseller's cloud costs and customer revenue, aligning pricing, discounts, and margin so every account stays profitable as the business grows.",
+    images: ["/opengraph-image.png"],
   },
 };
 

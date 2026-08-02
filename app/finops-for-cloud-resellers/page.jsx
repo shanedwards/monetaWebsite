@@ -14,12 +14,14 @@ export const metadata = {
     description:
       "A structured, repeatable Cloud FinOps service for AWS and Azure resellers — deliver FinOps consistently across every customer without added operational burden.",
     url: `${SITE_URL}/finops-for-cloud-resellers`,
+    images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "FinOps for Cloud Resellers — moneta",
     description:
       "A structured, repeatable Cloud FinOps service for AWS and Azure resellers — deliver FinOps consistently across every customer without added operational burden.",
+    images: ["/opengraph-image.png"],
   },
 };
 

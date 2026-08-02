@@ -16,12 +16,14 @@ export const metadata = {
     description:
       "moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure.",
     url: `${SITE_URL}/finops-services`,
+    images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cloud FinOps Services — moneta",
     description:
       "moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure.",
+    images: ["/opengraph-image.png"],
   },
 };
 
