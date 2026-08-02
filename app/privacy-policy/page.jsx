@@ -57,9 +57,9 @@ export default function PrivacyPolicyPage() {
         <div>
           <P>
             Protecting your private information is our priority. This Statement of Privacy applies to www.monetacloud.com,
-            and Moneta and governs data collection and usage. For the purposes of this Privacy Policy, unless otherwise
-            noted, all references to Moneta include www.monetacloud.com and Moneta. The Moneta website is a news and
-            information site. By using the Moneta website, you consent to the data practices described in this statement.
+            and moneta and governs data collection and usage. For the purposes of this Privacy Policy, unless otherwise
+            noted, all references to moneta include www.monetacloud.com and moneta. The moneta website is a news and
+            information site. By using the moneta website, you consent to the data practices described in this statement.
           </P>
 
           <H>Collection of your Personal Information</H>
@@ -75,56 +75,56 @@ export default function PrivacyPolicyPage() {
           </P>
 
           <H>Sharing Information with Third Parties</H>
-          <P>Moneta does not sell, rent or lease its customer lists to third parties.</P>
+          <P>moneta does not sell, rent or lease its customer lists to third parties.</P>
           <P>
-            Moneta may, from time to time, contact you on behalf of external business partners about a particular offering
+            moneta may, from time to time, contact you on behalf of external business partners about a particular offering
             that may be of interest to you. In those cases, your unique personally identifiable information (e-mail, name,
-            address, telephone number) is not transferred to the third party. Moneta may share data with trusted partners to
+            address, telephone number) is not transferred to the third party. moneta may share data with trusted partners to
             help perform statistical analysis, send you email or postal mail, provide customer support, or arrange for
             deliveries. All such third parties are prohibited from using your personal information except to provide these
-            services to Moneta, and they are required to maintain the confidentiality of your information.
+            services to moneta, and they are required to maintain the confidentiality of your information.
           </P>
           <P>
-            Moneta may disclose your personal information, without notice, if required to do so by law or in the good faith
+            moneta may disclose your personal information, without notice, if required to do so by law or in the good faith
             belief that such action is necessary to: (a) conform to the edicts of the law or comply with legal process served
-            on Moneta or the site; (b) protect and defend the rights or property of Moneta; and/or (c) act under exigent
-            circumstances to protect the personal safety of users of Moneta, or the public.
+            on moneta or the site; (b) protect and defend the rights or property of moneta; and/or (c) act under exigent
+            circumstances to protect the personal safety of users of moneta, or the public.
           </P>
 
           <H>Tracking User Behavior</H>
           <P>
-            Moneta may keep track of the websites and pages our users visit within Moneta, in order to determine what Moneta
-            services are the most popular. This data is used to deliver customized content and advertising within Moneta to
+            moneta may keep track of the websites and pages our users visit within moneta, in order to determine what moneta
+            services are the most popular. This data is used to deliver customized content and advertising within moneta to
             customers whose behavior indicates that they are interested in a particular subject area.
           </P>
 
           <H>Automatically Collected Information</H>
           <P>
-            Information about your computer hardware and software may be automatically collected by Moneta. This information
+            Information about your computer hardware and software may be automatically collected by moneta. This information
             can include: your IP address, browser type, domain names, access times and referring website addresses. This
             information is used for the operation of the service, to maintain quality of the service, and to provide general
-            statistics regarding use of the Moneta website.
+            statistics regarding use of the moneta website.
           </P>
 
           <H>Use of Cookies</H>
           <P>
-            The Moneta website may use &quot;cookies&quot; to help you personalize your online experience. A cookie is a text file that
+            The moneta website may use &quot;cookies&quot; to help you personalize your online experience. A cookie is a text file that
             is placed on your hard disk by a web page server. Cookies cannot be used to run programs or deliver viruses to
             your computer. Cookies are uniquely assigned to you, and can only be read by a web server in the domain that
             issued the cookie to you.
           </P>
           <P>
             One of the primary purposes of cookies is to provide a convenience feature to save you time. The purpose of a
-            cookie is to tell the Web server that you have returned to a specific page. For example, if you personalize Moneta
-            pages, or register with Moneta site or services, a cookie helps Moneta to recall your specific information on
+            cookie is to tell the Web server that you have returned to a specific page. For example, if you personalize moneta
+            pages, or register with moneta site or services, a cookie helps moneta to recall your specific information on
             subsequent visits. This simplifies the process of recording your personal information, such as billing addresses,
-            shipping addresses, and so on. When you return to the same Moneta website, the information you previously provided
-            can be retrieved, so you can easily use the Moneta features that you customized.
+            shipping addresses, and so on. When you return to the same moneta website, the information you previously provided
+            can be retrieved, so you can easily use the moneta features that you customized.
           </P>
           <P>
             You have the ability to accept or decline cookies. Most Web browsers automatically accept cookies, but you can
             usually modify your browser setting to decline cookies if you prefer. If you choose to decline cookies, you may
-            not be able to fully experience the interactive features of the Moneta services or websites you visit.
+            not be able to fully experience the interactive features of the moneta services or websites you visit.
           </P>
 
           <H>Links</H>
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
 
           <H>Security of your Personal Information</H>
           <P>
-            Moneta secures your personal information from unauthorized access, use, or disclosure. Moneta uses the following
+            moneta secures your personal information from unauthorized access, use, or disclosure. moneta uses the following
             methods for this purpose:
           </P>
           <ul className="list-disc pl-6 mb-4">
@@ -176,18 +176,18 @@ export default function PrivacyPolicyPage() {
 
           <H>Children Under Thirteen</H>
           <P>
-            Moneta does not knowingly collect personally identifiable information from children under the age of thirteen. If
+            moneta does not knowingly collect personally identifiable information from children under the age of thirteen. If
             you are under the age of thirteen, you must ask your parent or guardian for permission to use this website.
           </P>
 
           <H>E-mail Communications</H>
           <P>
-            From time to time, Moneta may contact you via email for the purpose of providing announcements, promotional offers,
+            From time to time, moneta may contact you via email for the purpose of providing announcements, promotional offers,
             alerts, confirmations, surveys, and/or other general communication. In order to improve our Services, we may
-            receive a notification when you open an email from Moneta or click on a link therein.
+            receive a notification when you open an email from moneta or click on a link therein.
           </P>
           <P>
-            If you would like to stop receiving marketing or promotional communications via email from Moneta, you may opt out
+            If you would like to stop receiving marketing or promotional communications via email from moneta, you may opt out
             of such communications by clicking on the UNSUBSCRIBE or MANAGE PREFERENCES links.
           </P>
 
@@ -196,7 +196,7 @@ export default function PrivacyPolicyPage() {
 
           <H>Changes to this Statement</H>
           <P>
-            Moneta reserves the right to change this Privacy Policy from time to time. We will notify you about significant
+            moneta reserves the right to change this Privacy Policy from time to time. We will notify you about significant
             changes in the way we treat personal information by sending a notice to the primary email address specified in your
             account, by placing a prominent notice on our website, and/or by updating any privacy information. Your continued
             use of the website and/or Services available after such modifications will constitute your: (a) acknowledgment of
@@ -205,8 +205,8 @@ export default function PrivacyPolicyPage() {
 
           <H>Contact Information</H>
           <P>
-            Moneta welcomes your questions or comments regarding this Statement of Privacy. If you believe that Moneta has not
-            adhered to this Statement, please contact Moneta at:{" "}
+            moneta welcomes your questions or comments regarding this Statement of Privacy. If you believe that moneta has not
+            adhered to this Statement, please contact moneta at:{" "}
             <a href="mailto:info@monetacloud.com" className="text-white font-semibold hover:opacity-80 underline">
               info@monetacloud.com
             </a>
