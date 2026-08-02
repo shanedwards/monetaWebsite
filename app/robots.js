@@ -8,6 +8,7 @@ const AI_CRAWLERS = [
   "OAI-SearchBot", // OpenAI SearchGPT indexing
   "ClaudeBot", // Anthropic training crawler
   "Claude-Web", // Anthropic live fetch
+  "Claude-SearchBot", // Anthropic search indexing
   "PerplexityBot", // Perplexity indexing
   "Perplexity-User", // Perplexity live fetch
   "Google-Extended", // Google Gemini / Vertex AI training
