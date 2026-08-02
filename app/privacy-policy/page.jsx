@@ -56,9 +56,9 @@ export default function PrivacyPolicyPage() {
       <SectionShell className="border-t border-line-soft !pt-8">
         <div>
           <P>
-            Protecting your private information is our priority. This Statement of Privacy applies to www.monetacloud.com,
+            Protecting your private information is our priority. This Statement of Privacy applies to monetacloud.com,
             and moneta and governs data collection and usage. For the purposes of this Privacy Policy, unless otherwise
-            noted, all references to moneta include www.monetacloud.com and moneta. The moneta website is a news and
+            noted, all references to moneta include monetacloud.com and moneta. The moneta website is a news and
             information site. By using the moneta website, you consent to the data practices described in this statement.
           </P>
 
