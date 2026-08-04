@@ -11,19 +11,26 @@ so an AI assistant can produce accurate files without guessing at site structure
 - **Company:** moneta — "the financial operating system for AWS and Azure cloud resellers." Aligns
   billing, pricing, discounts, and margins in one platform for cloud resellers and MSPs.
 
-## The 4 real pages (there are no others)
+## The 5 real pages (there are no others)
 
 | URL | Title | Description | Priority | Change frequency |
 |---|---|---|---|---|
 | `/` | moneta — Cloud Reseller Billing | The financial operating system for AWS and Azure cloud resellers — aligning billing, pricing, discounts, and margins in one platform. | 1.0 | weekly |
 | `/finops-services` | Cloud FinOps Services | moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure. | 0.8 | monthly |
 | `/why-moneta` | Why moneta | moneta sits between the reseller's cloud costs and customer revenue, aligning pricing, discounts, and margin so every account stays profitable as the business grows. | 0.8 | monthly |
+| `/news` | News | Press releases and company news from moneta, the financial operating system for AWS and Azure cloud resellers. | 0.7 | weekly |
 | `/privacy-policy` | Privacy Policy | How moneta collects, uses, and protects your personal information on monetacloud.com. | 0.3 | yearly |
 
-Do not invent additional routes. These 4 are the entire site. (A `/platform` page and related diagram
+Do not invent additional routes. These 5 are the entire site. (A `/platform` page and related diagram
 components exist in the codebase but are dead code — never routed to, never linked — exclude entirely.
 `/finops-for-cloud-resellers` also exists as a buildable route in the codebase but is not linked from
 anywhere on the live site — exclude it from SEO files as well.)
+
+Individual press releases live at `/news/[slug]`, sourced from `content/news/index.js` (currently
+empty — no releases published yet). Each published release should get its own sitemap entry once it
+exists; `app/sitemap.js` already generates these dynamically from `getAllReleases()`, so no manual
+sitemap edits are needed when a release is added — only this brief's page count may need a quick sanity
+check if the count of `/news/*` entries becomes worth noting explicitly.
 
 ## Current `sitemap.xml` (Next.js `app/sitemap.js`, generates this automatically at `/sitemap.xml`)
 
