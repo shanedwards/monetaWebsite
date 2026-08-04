@@ -6,10 +6,10 @@ moneta helps cloud resellers and managed service providers (MSPs) eliminate marg
 
 ## Pages
 
-- [Home](https://monetacloud.com/): Overview of moneta's value proposition — eliminating margin loss in cloud reseller billing through a unified operating system for billing, pricing, discounts, and margin intelligence.
-- [Cloud FinOps Services](https://monetacloud.com/finops-services): How moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure.
-- [Why moneta](https://monetacloud.com/why-moneta): Positions moneta between the reseller's cloud costs and customer revenue — aligning pricing, discounts, and margin so every account stays profitable as the business grows.
-- [Privacy Policy](https://monetacloud.com/privacy-policy): How moneta collects, uses, and protects personal information collected via the website.
+- [Home](https://www.monetacloud.com/): Overview of moneta's value proposition — eliminating margin loss in cloud reseller billing through a unified operating system for billing, pricing, discounts, and margin intelligence.
+- [Cloud FinOps Services](https://www.monetacloud.com/finops-services): How moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure.
+- [Why moneta](https://www.monetacloud.com/why-moneta): Positions moneta between the reseller's cloud costs and customer revenue — aligning pricing, discounts, and margin so every account stays profitable as the business grows.
+- [Privacy Policy](https://www.monetacloud.com/privacy-policy): How moneta collects, uses, and protects personal information collected via the website.
 
 ## FAQ
 
@@ -25,11 +25,11 @@ moneta helps cloud resellers and managed service providers (MSPs) eliminate marg
 ## Company
 
 - Name: moneta
-- Website: https://monetacloud.com
+- Website: https://www.monetacloud.com
 - LinkedIn: https://www.linkedin.com/company/monetacloud/
 - Built for: AWS and Azure cloud resellers, managed service providers (MSPs), and organizations managing cloud billing/pricing across multiple customer accounts.
 
 ## Resources
 
-- Sitemap: https://monetacloud.com/sitemap.xml
-- Full site (all pages allowed for AI crawlers): https://monetacloud.com/robots.txt
+- Sitemap: https://www.monetacloud.com/sitemap.xml
+- Full site (all pages allowed for AI crawlers): https://www.monetacloud.com/robots.txt

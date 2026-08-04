@@ -1,6 +1,6 @@
 import { getAllReleases } from "@/content/news";
 
-const BASE_URL = "https://monetacloud.com";
+const BASE_URL = "https://www.monetacloud.com";
 
 // Single source of truth for the site's real, routed pages.
 const ROUTES = [

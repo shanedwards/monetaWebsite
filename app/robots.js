@@ -1,4 +1,4 @@
-const BASE_URL = "https://monetacloud.com";
+const BASE_URL = "https://www.monetacloud.com";
 
 // AI answer-engine + search crawlers this site deliberately welcomes.
 // Explicit allowlisting (redundant under "*") signals intent to each engine.

@@ -1,4 +1,4 @@
-# SEO Files Brief — monetacloud.com
+# SEO Files Brief — www.monetacloud.com
 
 This is a reference document for generating/reviewing `sitemap.xml`, `robots.txt`, and `llms.txt`
 for the moneta website. It describes the site as it actually exists today (Next.js 16, App Router)
@@ -6,7 +6,7 @@ so an AI assistant can produce accurate files without guessing at site structure
 
 ## Site basics
 
-- **Production domain:** `https://monetacloud.com`
+- **Production domain:** `https://www.monetacloud.com`
 - **Framework:** Next.js 16, App Router, server-rendered (no client-side-only hash routing)
 - **Company:** moneta — "the financial operating system for AWS and Azure cloud resellers." Aligns
   billing, pricing, discounts, and margins in one platform for cloud resellers and MSPs.
@@ -19,7 +19,7 @@ so an AI assistant can produce accurate files without guessing at site structure
 | `/finops-services` | Cloud FinOps Services | moneta helps cloud resellers and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing Cloud FinOps reporting across AWS and Azure. | 0.8 | monthly |
 | `/why-moneta` | Why moneta | moneta sits between the reseller's cloud costs and customer revenue, aligning pricing, discounts, and margin so every account stays profitable as the business grows. | 0.8 | monthly |
 | `/news` | News | Press releases and company news from moneta, the financial operating system for AWS and Azure cloud resellers. | 0.7 | weekly |
-| `/privacy-policy` | Privacy Policy | How moneta collects, uses, and protects your personal information on monetacloud.com. | 0.3 | yearly |
+| `/privacy-policy` | Privacy Policy | How moneta collects, uses, and protects your personal information on www.monetacloud.com. | 0.3 | yearly |
 
 Do not invent additional routes. These 5 are the entire site. (A `/platform` page and related diagram
 components exist in the codebase but are dead code — never routed to, never linked — exclude entirely.
@@ -40,25 +40,25 @@ Already implemented. If regenerating by hand, match this shape:
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://monetacloud.com/</loc>
+    <loc>https://www.monetacloud.com/</loc>
     <lastmod>YYYY-MM-DD</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://monetacloud.com/finops-services</loc>
+    <loc>https://www.monetacloud.com/finops-services</loc>
     <lastmod>YYYY-MM-DD</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://monetacloud.com/why-moneta</loc>
+    <loc>https://www.monetacloud.com/why-moneta</loc>
     <lastmod>YYYY-MM-DD</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://monetacloud.com/privacy-policy</loc>
+    <loc>https://www.monetacloud.com/privacy-policy</loc>
     <lastmod>YYYY-MM-DD</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -90,7 +90,7 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://monetacloud.com/sitemap.xml
+Sitemap: https://www.monetacloud.com/sitemap.xml
 ```
 
 If asked to add more AI crawlers, reasonable additions to consider (verify current UA strings before
@@ -100,7 +100,7 @@ line pointing at the canonical sitemap URL.
 ## `llms.txt` — does not exist yet, needs to be authored
 
 `llms.txt` is an emerging (not yet universally standardized) convention — a plain-Markdown file at
-the site root (`https://monetacloud.com/llms.txt`) intended to give AI/LLM crawlers a concise,
+the site root (`https://www.monetacloud.com/llms.txt`) intended to give AI/LLM crawlers a concise,
 structured summary of the site's purpose and key pages, similar in spirit to `robots.txt` but for
 content understanding rather than crawl permissions. Suggested structure and content, grounded in
 the actual site:
@@ -118,22 +118,22 @@ one-off spreadsheet analysis or generic single-tenant FinOps tools.
 
 ## Pages
 
-- [Home](https://monetacloud.com/): Overview of moneta's value proposition — eliminating margin loss
+- [Home](https://www.monetacloud.com/): Overview of moneta's value proposition — eliminating margin loss
   in cloud reseller billing through a unified operating system for billing, pricing, discounts, and
   margin intelligence.
-- [Cloud FinOps Services](https://monetacloud.com/finops-services): How moneta helps cloud resellers
+- [Cloud FinOps Services](https://www.monetacloud.com/finops-services): How moneta helps cloud resellers
   and MSPs deliver cost visibility, optimization insights, budgeting, governance, and customer-facing
   Cloud FinOps reporting across AWS and Azure.
-- [Why moneta](https://monetacloud.com/why-moneta): Positions moneta between the reseller's cloud
+- [Why moneta](https://www.monetacloud.com/why-moneta): Positions moneta between the reseller's cloud
   costs and customer revenue — aligning pricing, discounts, and margin so every account stays
   profitable as the business grows.
-- [Privacy Policy](https://monetacloud.com/privacy-policy): How moneta collects, uses, and protects
+- [Privacy Policy](https://www.monetacloud.com/privacy-policy): How moneta collects, uses, and protects
   personal information collected via the website.
 
 ## Company
 
 - Name: moneta
-- Website: https://monetacloud.com
+- Website: https://www.monetacloud.com
 - LinkedIn: https://www.linkedin.com/company/monetacloud/
 - Built for: AWS and Azure cloud resellers, managed service providers (MSPs), and organizations
   managing cloud billing/pricing across multiple customer accounts.
@@ -151,10 +151,10 @@ Notes for whoever authors the final version:
 
 The site already ships JSON-LD structured data that should stay consistent with anything written in
 `llms.txt`:
-- **Organization** (root layout, every page): name "moneta", url `https://monetacloud.com`, logo
-  `https://monetacloud.com/assets/moneta-logo.png`, description "The financial operating system for
+- **Organization** (root layout, every page): name "moneta", url `https://www.monetacloud.com`, logo
+  `https://www.monetacloud.com/assets/moneta-logo.png`, description "The financial operating system for
   AWS and Azure cloud resellers.", sameAs LinkedIn.
-- **WebSite** (root layout, every page): name "moneta", url `https://monetacloud.com`.
+- **WebSite** (root layout, every page): name "moneta", url `https://www.monetacloud.com`.
 - **Service** (on `/finops-services`): describes the FinOps / cloud-reseller-billing service offering.
 - **FAQPage** (on `/`, home page): built from the FAQ content below.
 - **BreadcrumbList** (on non-home pages).
