@@ -26,6 +26,17 @@ function formatDate(dateStr) {
   return new Date(`${dateStr}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 }
 
+function sourceName(sourceUrl) {
+  if (!sourceUrl) return null;
+  try {
+    const host = new URL(sourceUrl).hostname.replace(/^www\./, "");
+    if (host === "einpresswire.com") return "EIN Presswire";
+    return host;
+  } catch {
+    return null;
+  }
+}
+
 export default function NewsPage() {
   const releases = getAllReleases();
 
@@ -64,15 +75,21 @@ export default function NewsPage() {
           </div>
         ) : (
           <div className="flex flex-col divide-y divide-line-soft">
-            {releases.map((r) => (
-              <Link key={r.slug} href={`/news/${r.slug}`} className="py-7 first:pt-0 group">
-                <p className="text-[13px] text-ink-secondary mb-2">{formatDate(r.date)}</p>
-                <h2 className="text-[20px] md:text-[22px] font-medium text-white group-hover:opacity-80 transition-opacity" style={{ letterSpacing: "-0.01em" }}>
-                  {r.title}
-                </h2>
-                {r.summary && <p className="mt-2 text-[15px] leading-[1.7] text-ink-secondary max-w-[720px]">{r.summary}</p>}
-              </Link>
-            ))}
+            {releases.map((r) => {
+              const source = sourceName(r.sourceUrl);
+              return (
+                <Link key={r.slug} href={`/news/${r.slug}`} className="py-7 first:pt-0 group">
+                  <p className="text-[13px] text-ink-secondary mb-2">
+                    {formatDate(r.date)}
+                    {source && <span> · via {source}</span>}
+                  </p>
+                  <h2 className="text-[20px] md:text-[22px] font-medium text-white group-hover:opacity-80 transition-opacity" style={{ letterSpacing: "-0.01em" }}>
+                    {r.title}
+                  </h2>
+                  {r.summary && <p className="mt-2 text-[15px] leading-[1.7] text-ink-secondary max-w-[720px]">{r.summary}</p>}
+                </Link>
+              );
+            })}
           </div>
         )}
       </SectionShell>
