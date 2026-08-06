@@ -7,6 +7,10 @@
   "redirects": [
     { "source": "/platform", "destination": "/why-moneta", "permanent": true },
     { "source": "/partners", "destination": "/finops-services", "permanent": true },
-    { "source": "/blog/:path*", "destination": "/", "permanent": true }
+    { "source": "/blog/:path*", "destination": "/", "permanent": true },
+    { "source": "/company", "destination": "/why-moneta", "permanent": true },
+    { "source": "/services", "destination": "/finops-services", "permanent": true },
+    { "source": "/5-essential-capabilities-cfos-need-in-cloud-financial-management", "destination": "/finops-services", "permanent": true },
+    { "source": "/finops-for-cloud-resellers", "destination": "/finops-services", "permanent": true }
   ]
 }

@@ -26,6 +26,9 @@ export default function Footer() {
             <button onClick={openDemo} className="text-[14px] text-ink-secondary hover:text-white transition-colors">
               Contact
             </button>
+            <a href="https://blog.monetacloud.com" className="text-[14px] text-ink-secondary hover:text-white transition-colors">
+              Blog
+            </a>
             <span className="text-[14px] text-ink-secondary select-none">info@monetacloud.com</span>
             <a
               href="https://www.linkedin.com/company/monetacloud/"

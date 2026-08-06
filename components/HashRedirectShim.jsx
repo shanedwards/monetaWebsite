@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const HASH_ROUTES = {
   "#/": "/",
   "#/finops-services": "/finops-services",
-  "#/finops-for-cloud-resellers": "/finops-for-cloud-resellers",
+  "#/finops-for-cloud-resellers": "/finops-services",
   "#/why-moneta": "/why-moneta",
   "#/privacy-policy": "/privacy-policy",
 };
