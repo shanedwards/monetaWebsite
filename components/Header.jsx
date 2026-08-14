@@ -69,7 +69,7 @@ export default function Header() {
             Book a Demo <ArrowRight size={15} />
           </button>
           <button
-            className="md:hidden w-10 h-10 grid place-items-center rounded-md border border-line text-ink-secondary"
+            className="md:hidden w-11 h-11 grid place-items-center rounded-md border border-line text-ink-secondary"
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
           >

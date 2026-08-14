@@ -91,7 +91,7 @@ export default function DemoModal({ isOpen, onClose }) {
           <button
             onClick={onClose}
             aria-label="Close"
-            className="absolute top-3 right-3 w-8 h-8 grid place-items-center rounded-md hover:bg-bg-tertiary"
+            className="absolute top-2 right-2 w-11 h-11 grid place-items-center rounded-md hover:bg-bg-tertiary"
             style={{ color: "#94a3b8" }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
