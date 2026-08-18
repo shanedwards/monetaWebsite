@@ -1,8 +1,6 @@
 import SectionShell from "@/components/ui/SectionShell";
 import { breadcrumbJsonLd, SITE_URL } from "@/lib/seo";
 
-const LAST_UPDATED = "August 13, 2026";
-
 export const metadata = {
   title: "Privacy Policy",
   description: "What moneta collects through monetacloud.com, why, and how to request deletion.",
@@ -52,7 +50,6 @@ export default function PrivacyPolicyPage() {
           <h1 className="text-balance" style={{ fontSize: "clamp(38px, 4.8vw, 64px)", fontWeight: 500, lineHeight: 1.06, letterSpacing: "-0.03em" }}>
             Privacy Policy
           </h1>
-          <p className="mt-4 text-[14px] text-ink-secondary">Last updated: {LAST_UPDATED}</p>
         </div>
       </section>
 

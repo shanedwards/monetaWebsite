@@ -45,9 +45,14 @@ export default function Footer() {
         </div>
         <div className="mt-5 pt-3 border-t border-line-soft flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
           <p className="text-[13px] text-ink-secondary">© 2026 moneta. All rights reserved.</p>
-          <Link href="/privacy-policy" className="text-[13px] text-ink-secondary hover:text-white">
-            Privacy Policy
-          </Link>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy-policy" className="text-[13px] text-ink-secondary hover:text-white">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="text-[13px] text-ink-secondary hover:text-white">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
