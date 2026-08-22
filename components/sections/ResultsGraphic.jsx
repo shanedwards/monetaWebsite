@@ -53,7 +53,7 @@ export default function ResultsGraphic() {
     <div ref={ref}>
       <div className="flex flex-col items-center text-center">
         <Eyebrow className="mb-6 flex flex-col items-center">Results</Eyebrow>
-        <h2 className="text-h1">Real outcomes for cloud resellers.</h2>
+        <h2 className="text-h1">Strengthening <span className="grad-text-bp">reseller economics</span>.</h2>
         <p className="mt-6 text-[16.5px] leading-[1.7] text-ink-secondary max-w-[640px]">
           Improve billing control, protect margins, and scale customer operations without adding
           unnecessary complexity.
@@ -78,6 +78,9 @@ export default function ResultsGraphic() {
           </div>
         ))}
       </div>
+      <p className="text-xs italic text-ink-secondary text-center" style={{ marginTop: 12 }}>
+        Illustrative outcomes; actual results may vary
+      </p>
 
       <div className="grid grid-cols-3 gap-2 md:gap-[18px]" style={{ marginTop: 20 }}>
         {BOTTOM_FEATURES.map(f => (
