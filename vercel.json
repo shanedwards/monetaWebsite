@@ -10,6 +10,7 @@
     { "source": "/company", "destination": "/why-moneta", "permanent": true },
     { "source": "/services", "destination": "/finops-services", "permanent": true },
     { "source": "/5-essential-capabilities-cfos-need-in-cloud-financial-management", "destination": "/finops-services", "permanent": true },
+    { "source": "/5-essential-capabilities-cfos-need-to-understand-and-manage-cloud-spend-moneta", "destination": "/", "permanent": true },
     { "source": "/finops-for-cloud-resellers", "destination": "/finops-services", "permanent": true }
   ],
   "headers": [
