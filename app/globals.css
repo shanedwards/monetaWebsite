@@ -118,6 +118,7 @@ h1, h2, h3, h4, .text-hero, .text-h1, .text-h2, .text-h3 {
 @keyframes flow { 0%{stroke-dashoffset:24}100%{stroke-dashoffset:0} }
 .flow-line { stroke-dasharray: 4 4; animation: flow 1.4s linear infinite; }
 a,button { -webkit-tap-highlight-color: transparent; }
+button:not(:disabled) { cursor: pointer; }
 .text-balance { text-wrap: balance; }
 
 /* ── Light section overrides ── */
