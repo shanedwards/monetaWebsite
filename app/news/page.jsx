@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Eyebrow from "@/components/ui/Eyebrow";
-import SectionShell from "@/components/ui/SectionShell";
 import { SITE_URL, breadcrumbJsonLd } from "@/lib/seo";
 import { getAllReleases } from "@/content/news";
 
@@ -68,31 +67,37 @@ export default function NewsPage() {
         </div>
       </section>
 
-      <SectionShell className="border-t border-line-soft !pt-8">
+      <section className="border-t border-line-soft py-10 md:py-14 !pt-0">
         {releases.length === 0 ? (
-          <div className="text-center py-16">
+          <div className="container-x text-center pt-8 pb-16">
             <p className="text-[16px] leading-[1.7] text-ink-secondary">No press releases yet. Check back soon.</p>
           </div>
         ) : (
-          <div className="flex flex-col divide-y divide-line-soft">
+          <div className="flex flex-col">
             {releases.map((r) => {
               const source = sourceName(r.sourceUrl);
               return (
-                <Link key={r.slug} href={`/news/${r.slug}`} className="py-7 first:pt-0 group">
-                  <p className="text-[13px] text-ink-secondary mb-2">
-                    {formatDate(r.date)}
-                    {source && <span> · via {source}</span>}
-                  </p>
-                  <h2 className="text-[20px] md:text-[22px] font-medium text-white group-hover:opacity-80 transition-opacity" style={{ letterSpacing: "-0.01em" }}>
-                    {r.title}
-                  </h2>
-                  {r.summary && <p className="mt-2 text-[15px] leading-[1.7] text-ink-secondary max-w-[720px]">{r.summary}</p>}
+                <Link
+                  key={r.slug}
+                  href={`/news/${r.slug}`}
+                  className="block w-screen relative left-1/2 -translate-x-1/2 py-7 first:pt-8 border-b border-line-soft group transition-colors duration-200 hover:bg-white/[0.03]"
+                >
+                  <div className="container-x">
+                    <p className="text-[13px] text-ink-secondary mb-2">
+                      {formatDate(r.date)}
+                      {source && <span> · via {source}</span>}
+                    </p>
+                    <h2 className="text-[20px] md:text-[22px] font-medium text-white group-hover:opacity-80 transition-opacity" style={{ letterSpacing: "-0.01em" }}>
+                      {r.title}
+                    </h2>
+                    {r.summary && <p className="mt-2 text-[15px] leading-[1.7] text-ink-secondary max-w-[720px]">{r.summary}</p>}
+                  </div>
                 </Link>
               );
             })}
           </div>
         )}
-      </SectionShell>
+      </section>
     </>
   );
 }
