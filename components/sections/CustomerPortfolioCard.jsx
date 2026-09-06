@@ -72,7 +72,7 @@ export default function CustomerPortfolioCard() {
               Aggregate margin <span style={{ color: "#22c55e", fontWeight: 600 }}>16.6%</span> · <span style={{ color: "#f1f5f9" }}>+1.2pp MoM</span>
             </span>
           </div>
-          <span style={{ fontSize: 11, color: "#475569", fontFamily: "Inter, sans-serif" }}>August 2026</span>
+          <span style={{ fontSize: 11, color: "#475569", fontFamily: "Inter, sans-serif" }}>September 2026</span>
         </div>
       </div>
       <style>{`@keyframes floatUpDown { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }`}</style>
@@ -84,7 +84,7 @@ export default function CustomerPortfolioCard() {
           <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#16a34a", fontFamily: "Inter, sans-serif" }}>Savings Found</span>
         </div>
         <p style={{ fontSize: 13, fontWeight: 600, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 3 }}>Northvale Labs · +$22,480</p>
-        <p style={{ fontSize: 12, color: "#64748b", lineHeight: 1.55, fontFamily: "Inter, sans-serif" }}>Six optimization opportunities surfaced. Ready for August customer review.</p>
+        <p style={{ fontSize: 12, color: "#64748b", lineHeight: 1.55, fontFamily: "Inter, sans-serif" }}>Six optimization opportunities surfaced. Ready for September customer review.</p>
       </div>
     </div>
   );

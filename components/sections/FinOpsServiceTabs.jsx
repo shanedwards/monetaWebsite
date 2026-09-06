@@ -43,7 +43,7 @@ export default function FinOpsServiceTabs() {
       card: (tick) => (
         <div style={{ background: "#fff", borderRadius: 12, padding: "14px 16px", border: "1px solid #e2e8f0", boxShadow: "0 2px 12px rgba(0,0,0,0.06)", flex: 1, display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
-            <span style={{ fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "Inter, sans-serif" }}>KMR · AUGUST SPEND</span>
+            <span style={{ fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "Inter, sans-serif" }}>KMR · SEPTEMBER SPEND</span>
             <span style={{ fontSize: 11, color: "#16a34a", fontWeight: 600, fontFamily: "Inter, sans-serif" }}>+11.4% MoM</span>
           </div>
           <div key={tick} style={{ fontSize: 28, fontWeight: 800, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 8, letterSpacing: "-1px" }}>$<FinOpsCountUp target={127480} comma /></div>
@@ -80,7 +80,7 @@ export default function FinOpsServiceTabs() {
       card: (tick) => (
         <div style={{ background: "#fff", borderRadius: 12, padding: "14px 16px", border: "1px solid #e2e8f0", boxShadow: "0 2px 12px rgba(0,0,0,0.06)", flex: 1, display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
-            <span style={{ fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "Inter, sans-serif" }}>KMR · AUGUST SAVINGS</span>
+            <span style={{ fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "Inter, sans-serif" }}>KMR · SEPTEMBER SAVINGS</span>
             <span style={{ fontSize: 11, color: "#16a34a", fontWeight: 600, fontFamily: "Inter, sans-serif" }}>+$4.9K this month</span>
           </div>
           <div key={tick} style={{ fontSize: 28, fontWeight: 800, color: "#0f172a", fontFamily: "Inter, sans-serif", marginBottom: 10, letterSpacing: "-1px" }}>$<FinOpsCountUp target={22946} comma /></div>
