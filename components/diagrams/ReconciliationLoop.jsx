@@ -13,7 +13,7 @@ export default function ReconciliationLoop() {
   const steps = [
     {
       label: "Cloud Billing", sub: "AWS · Azure", num: "01",
-      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6H16a5 5 0 011 9.9M8 17l4-4 4 4M12 13v8"/></svg>,
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M7 18a4.5 4.5 0 01-.5-8.976A5.5 5.5 0 0117.5 10a4 4 0 01.5 7.98M12 11v9M9 14l3-3 3 3"/></svg>,
       color: "#38bdf8", stats: [{ k: "rows", v: "8.3T" }, { k: "providers", v: "2" }],
     },
     {
@@ -105,14 +105,14 @@ export default function ReconciliationLoop() {
 
       <div style={{ position: "relative", marginTop: 4, height: 30, width: "100%" }}>
         <svg width="100%" height="30" viewBox="0 0 800 30" preserveAspectRatio="none" fill="none" style={{ display: "block", position: "absolute", top: 0, left: 0 }}>
-          <path d="M 700 4 C 700 26, 550 28, 400 28 C 250 28, 100 26, 100 4" stroke="rgba(56,189,248,0.45)" strokeWidth="1.5" strokeDasharray="8 6" fill="none">
+          <path d="M 700 11 C 700 26, 550 28, 400 28 C 250 28, 100 26, 100 11" stroke="rgba(56,189,248,0.45)" strokeWidth="1.5" strokeDasharray="8 6" fill="none">
             <animate attributeName="stroke-dashoffset" from="28" to="0" dur="2.4s" repeatCount="indefinite" />
           </path>
+          <path d="M 700 11 C 700 26, 550 28, 400 28 C 250 28, 100 26, 100 11" stroke="#38bdf8" strokeWidth="1.5" fill="none" pathLength="100" strokeDasharray="1.2 100" strokeDashoffset="-98.8" />
         </svg>
-        <div style={{ position: "absolute", top: -8, left: "calc(12.5% - 6px)", display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <div style={{ width: 0, height: 0, borderLeft: "6px solid transparent", borderRight: "6px solid transparent", borderBottom: "11px solid #38bdf8" }} />
-          <div style={{ width: 2, height: 4, background: "#2887ae", marginLeft: 1 }} />
-        </div>
+        <svg width="14" height="12" viewBox="0 0 14 12" style={{ position: "absolute", top: -1, left: "12.5%", transform: "translateX(-50%)" }}>
+          <polygon points="7,0 14,12 0,12" fill="#38bdf8" />
+        </svg>
       </div>
 
       <style>{`
