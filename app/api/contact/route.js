@@ -1,7 +1,5 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const TO = ["info@monetacloud.com"];
 const BCC = ["websiteformoneta@gmail.com"];
 const FROM = "moneta <noreply@monetacloud.com>";
@@ -31,7 +29,13 @@ Company: ${company}
 Message:
 ${message || "— none —"}`;
 
+  if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY is not set");
+    return Response.json({ error: "Failed to send message" }, { status: 500 });
+  }
+
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
       from: FROM,
       to: TO,
